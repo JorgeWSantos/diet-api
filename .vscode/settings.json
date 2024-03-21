@@ -38,4 +38,7 @@
     ".env.example": ".env*",
     ".gitignore": "end"
   },
+  "editor.tabSize": 2,
+  "typescript.format.insertSpaceBeforeFunctionParenthesis": false,
+  "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false
 }

@@ -20,6 +20,21 @@
         "@typescript-eslint/semi": [
             "error",
             "always"
-        ]
+        ],
+        "@typescript-eslint/indent": [
+            "off",
+            2
+        ],
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/space-before-function-paren": "off",
+        "space-before-function-paren": "off",
+        "no-tabs": "off"
+        // "@typescript-eslint/indent": [
+        //     "error",
+        //     2,
+        //     {
+        //         "SwitchCase": 1
+        //     }
+        // ],
     }
 }
