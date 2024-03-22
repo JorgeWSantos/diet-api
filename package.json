@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx watch src/server.ts",
     "lint": "eslint src --ext .ts --fix",
-    "build": "tsup src"
+    "build": "tsup src",
+    "knex": "node --import tsx ./node_modules/knex/bin/cli.js"
   },
   "type": "module",
   "keywords": [],
@@ -17,6 +18,8 @@
     "@types/dotenv": "^8.2.0",
     "dotenv": "^16.4.5",
     "fastify": "^4.26.2",
+    "knex": "^3.1.0",
+    "sqlite3": "^5.1.7",
     "tsx": "^4.7.1",
     "zod": "^3.22.4"
   },
