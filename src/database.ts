@@ -1,15 +1,16 @@
 import knex, { type Knex } from 'knex';
 
 export const config: Knex.Config = {
-  client: 'sqlite3',
+  client: 'sqlite',
   connection: {
-    filename: './app.db'
+    filename: './db/app.db'
   },
-  useNullAsDefault: true,
+  // useNullAsDefault: true,
   migrations: {
     extension: 'ts',
     directory: './db/migrations'
-  }
+  },
+  useNullAsDefault: true
 };
 
 const _knex = knex(config);

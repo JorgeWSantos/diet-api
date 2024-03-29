@@ -29,7 +29,8 @@
         "@typescript-eslint/space-before-function-paren": "off",
         "space-before-function-paren": "off",
         "no-tabs": "off",
-        "@typescript-eslint/no-floating-promises": "off"
+        "@typescript-eslint/no-floating-promises": "off",
+        "@typescript-eslint/strict-boolean-expressions": "off"
         // "@typescript-eslint/indent": [
         //     "error",
         //     2,
