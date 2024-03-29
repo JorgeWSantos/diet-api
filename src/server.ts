@@ -1,12 +1,14 @@
-import Fastify from 'fastify';
+import fastify from 'fastify';
+import cookie from '@fastify/cookie';
 import env from './env/index.ts';
 
 import { userRoutes } from './routes/users.ts';
 
-const app = Fastify({
-  logger: true
+const app = fastify({
+  logger: false
 });
 
+app.register(cookie);
 app.register(userRoutes, { prefix: '/users' });
 
 app.get('/', async (req, rep) => {
