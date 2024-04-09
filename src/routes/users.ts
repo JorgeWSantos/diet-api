@@ -14,8 +14,6 @@ export async function userRoutes(app: FastifyInstance) {
 	app.get('/find', { preHandler: [user_session] }, async (request, reply) => {
 		const user = request.user;
 
-		console.log('user', user);
-
 		return await reply.send({ user });
 	});
 

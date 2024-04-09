@@ -3,6 +3,7 @@ import cookie from '@fastify/cookie';
 import env from './env/index.ts';
 
 import { userRoutes } from './routes/users.ts';
+import { mealsRoutes } from './routes/meals.ts';
 
 const app = fastify({
   logger: false
@@ -10,6 +11,7 @@ const app = fastify({
 
 app.register(cookie);
 app.register(userRoutes, { prefix: '/users' });
+app.register(mealsRoutes, { prefix: '/meals' });
 
 app.get('/', async (req, rep) => {
   return 'server is running';
